@@ -67,10 +67,10 @@
     gap: 30px;
   }
   .intro__inner img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
   }
-
 }
 
 @media (max-width: 890px) {
@@ -97,5 +97,9 @@
   }
   .intro__item-text {
     font-size: 12px;
+  }
+  .intro__inner img {
+    width: 100%;
+    margin: 0;
   }
 }

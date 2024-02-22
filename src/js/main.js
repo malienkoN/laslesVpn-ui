@@ -128,6 +128,49 @@ ${Sprites()} <!--Logos-->
             </div>
         </div>
     </section>
+    <section class="aboutUs">
+        <div class="container">
+            <div class="about__inner">
+                <img src="../../public/img/aboutUs.svg" alt="">
+                <ul class="about__info">
+                   <li class="about__item-mainText">
+                        <h2>We Provide Many Features You Can Use</h2>
+                    </li>
+                    <li class="about__item-text">
+                        <p>You can explore the features that we provide with fun and have their own functions each feature.</p>
+                    </li>
+                    <li class="advantages">
+                        <ul class="advantages__list">
+                            <li class="advantages__list-item">
+                                <svg class="tickIcon" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="#tickIcon"></use>
+                                </svg>
+                                <p>Powerfull online protection.</p>
+                            </li>
+                            <li class="advantages__list-item">
+                                <svg class="tickIcon" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="#tickIcon"></use>
+                                </svg>
+                                <p>Internet without borders.</p>
+                            </li>
+                            <li class="advantages__list-item">
+                                <svg class="tickIcon" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="#tickIcon"></use>
+                                </svg>
+                                <p>Supercharged VPN</p>
+                            </li>
+                            <li class="advantages__list-item">
+                                <svg class="tickIcon" width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="#tickIcon"></use>
+                                </svg>
+                                <p>No specific time limits.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </div>
 `
 
