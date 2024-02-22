@@ -1,6 +1,17 @@
 @import "reset";
 @import "fonts";
 @import "header";
+@import "intro";
+
+.no-scroll {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .container {
   max-width: 1140px;

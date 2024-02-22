@@ -3,7 +3,8 @@
   align-items: center;
   height: 45px;
   justify-content: space-between;
-  padding-top: 45px;
+  margin-top: 45px;
+  margin-bottom: 88.5px;
 }
 
 .menu,
@@ -34,8 +35,17 @@
   position: relative;
   display: inline-block;
   color: #4F5665;
-  font-size: 16px;
   margin-right: 40px;
+  font-size: 16px;
+  transition: color .2s ease-in-out;
+}
+
+.user__action--item-signIn button a{
+  position: relative;
+  display: inline-block;
+  color: #4F5665;
+  margin-right: 0;
+  font-size: 16px;
   transition: color .2s ease-in-out;
 }
 
@@ -54,7 +64,7 @@
   width: 0;
   height: 100%;
   background-color: #F53855;
-  transition: width 0.2s ease-in-out;
+  transition: width 0.3s ease-in-out;
   z-index: -1; /* Ensure the background is behind the text */
   border-radius: 20px;
 }
@@ -99,9 +109,6 @@
   transition: 0.4s;
 }
 
-// MOBILE MENU
-//------------------------------------------------
-
 .user__action--item-signIn button {
   border: none;
   padding-right: 30px;
@@ -125,6 +132,7 @@
 .user__action--item-signUp button a {
   font-size: 16px;
   color: #F53855;
+  font-weight: 500;
 }
 
 .user__action--item-signUp button:hover {
@@ -141,14 +149,13 @@
 
 // MEDIA RESPONSES
 //----------------------------
+// Phones
+//------------------------------
 @media (max-width: 1100px) {
   .menu__list {
     margin-right: 30px;
   }
 }
-
-// Phones
-//------------------------------
 @media (max-width: 1000px) {
   .container {
     padding: 0 40px;
@@ -160,10 +167,14 @@
   .user__actions {
     display: none;
   }
+  .mobile__logo {
+    width: 105px;
+    height: 95px;
+  }
   .mobile__logo.mobile__logo-open  {
     display: block;
     z-index: 1;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .mobile-nav {
     display: flex;
@@ -182,18 +193,18 @@
   }
   .mobile__action--item-signIn button a {
     color: #0B132A;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 500;
   }
   .mobile__action--item-signUp button {
     border: 1px solid #F53855;
     border-radius: 20px;
     padding: 13px 45px;
-    font-weight: 500;
   }
   .mobile__action--item-signUp button a {
-    font-size: 16px;
+    font-size: 30px;
     color: #F53855;
+    font-weight: 500;
   }
   .menu__list {
     transform: translateX(100%);
@@ -213,10 +224,10 @@
     transform: translateX(0%);
   }
   .menu__list-item {
-    margin-bottom:20px;
+    margin-bottom:40px;
   }
   .menu__list-item a {
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 0;
   }
   .change .bar1 {
@@ -233,21 +244,43 @@
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 915px) {
+  .mobile__logo.mobile__logo-open  {
+    margin-bottom: 100px;
+  }
+  .logo {
+    width: 219px;
+    height: 117px;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 55px;
+    height: 7px;
+    margin: 7px 0;
+  }
+  .change .bar1 {
+    transform: translate(0, 13px) rotate(-45deg);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: translate(0, -15px) rotate(45deg);
+  }
+  .mobile__logo {
+    width: 105px;
+    height: 95px;
+  }
   .menu__list-item {
     margin-bottom: 50px;
   }
   .menu__list-item a {
-    font-size: 40px;
+    font-size: 30px;
   }
   .mobile__action--item-signIn button a {
-    color: #0B132A;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 30px;
   }
   .mobile__action--item-signUp button a {
-    font-size: 40px;
-    color: #F53855;
+    font-size: 30px;
   }
 }
 
@@ -257,34 +290,73 @@
     justify-content: center;
     padding-bottom: 0;
   }
-  .mobile__logo svg {
+  .mobile__logo {
     width: 105px;
     height: 107px;
   }
   .menu__list-item {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .menu__list-item a {
-    font-size: 30px;
+    font-size: 25px;
   }
   .mobile__action--item-signIn button {
     margin-bottom: 30px;
   }
   .mobile__action--item-signIn button a {
     color: #0B132A;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 25px;
   }
   .mobile__action--item-signUp button a {
-    font-size: 30px;
+    font-size: 25px;
     color: #F53855;
   }
 }
 
-@media (max-width: 500px) {
-  .mobile__logo svg {
+@media (max-width: 550px) {
+  .mobile__logo {
+    width: 85px;
+    height: 87px;
+  }
+  .mobile__logo.mobile__logo-open  {
+    margin-bottom: 70px;
+  }
+  .mobile__action--item-signIn button a {
+    font-size: 20px;
+  }
+  .mobile__action--item-signUp button a {
+    font-size: 20px;
+  }
+  .menu__list-item {
+    margin-bottom: 30px;
+  }
+  .menu__list-item a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo {
+    width: 149px;
+    height: 37px;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+  .mobile__logo {
     width: 75px;
     height: 77px;
+  }
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
   }
   .mobile__logo.mobile__logo-open {
     margin-bottom: 50px;
@@ -300,53 +372,5 @@
   }
   .mobile__action--item-signUp button a {
     font-size: 20px;
-  }
-}
-
-/* Tablets (landscape and portrait) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .logo svg {
-    width: 219px;
-    height: 107px;
-  }
-  .bar1, .bar2, .bar3 {
-    width: 62px;
-    height: 8px;
-    margin: 8px 0;
-  }
-  .change .bar1 {
-    transform: translate(0, 17px) rotate(-45deg);
-  }
-  .change .bar2 {
-    opacity: 0;
-  }
-  .change .bar3 {
-    transform: translate(0, -15px) rotate(45deg);
-  }
-}
-
-/* Tablets (landscape) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .logo svg {
-    width: 219px;
-    height: 107px;
-  }
-  .bar1, .bar2, .bar3 {
-    width: 62px;
-    height: 8px;
-    margin: 8px 0;
-  }
-}
-
-/* Tablets (portrait) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .logo svg {
-    width: 219px;
-    height: 107px;
-  }
-  .bar1, .bar2, .bar3 {
-    width: 62px;
-    height: 8px;
-    margin: 8px 0;
   }
 }
