@@ -2,9 +2,25 @@
 @import "fonts";
 @import "header";
 @import "intro";
+@import "box-info";
 
 .no-scroll {
   overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+}
+
+body {
+  font-family: "Rubik", serif;
+  line-height:1;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 img {

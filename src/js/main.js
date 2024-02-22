@@ -91,6 +91,43 @@ ${Sprites()} <!--Logos-->
             </div>
         </div>
     </section>
+    <section class="boxInfo">
+        <div class="container">
+            <div class="boxInfo__inner">
+                <ul class="boxInfo__list">
+                    <li class="boxInfo__list-item">
+                        <div class="circle">
+                            <img src="../../public/icons/userIcon.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="amount">90+</span>
+                            <span class="amountText">Users</span>
+                        </div>
+                    </li>
+                    <span class="splitter"></span>
+                    <li class="boxInfo__list-item">
+                        <div class="circle">
+                            <img src="../../public/icons/pointIcon.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="amount">30+</span>
+                            <span class="amountText">Locations</span>
+                        </div>
+                    </li>
+                    <span class="splitter"></span>
+                    <li class="boxInfo__list-item">
+                        <div class="circle">
+                            <img src="../../public/icons/serverIcon.svg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="amount">50+</span>
+                            <span class="amountText">Servers</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </div>
 `
 
