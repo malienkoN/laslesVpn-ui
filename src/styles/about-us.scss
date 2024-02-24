@@ -7,13 +7,13 @@
   justify-content: space-between;
 }
 
+.about__inner img {
+  margin: 0 auto;
+}
+
 .about__info {
   margin-top: auto;
   max-width: 430px;
-}
-
-.about__inner > img {
-  max-width: 100%;
 }
 
 .about__item-mainText {
@@ -55,11 +55,6 @@
     margin-top: 50px;
     max-width: 100%;
   }
-  .about__inner > img {
-    max-width: 80%;
-    height: auto;
-    margin: 0 auto;
-  }
   .advantages__list {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -95,8 +90,5 @@
   .tickIcon {
     width: 20px;
     height: 20px;
-  }
-  .about__inner > img {
-    max-width: 100%; /* Ensure the image does not exceed its container's width */
   }
 }

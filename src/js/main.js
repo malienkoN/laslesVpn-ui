@@ -7,15 +7,17 @@ ${Sprites()} <!--Logos-->
     <header>
      <div class="container">
         <div class="header__inner">
-                <svg class="logo" width="149" height="37" viewBox="0 0 149 37">
-                    <use xlink:href="#LaslesVPN"></use>
-                </svg>
+                <a href="/">
+                    <svg class="logo" width="149" height="37" viewBox="0 0 149 37">
+                        <use xlink:href="#LaslesVPN"></use>
+                    </svg>
+                </a>
+                <button class="menu__btn">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </button>
                 <nav class="menu">
-                    <button class="menu__btn">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </button>
                     <ul class="menu__list">
                         <li>
                             <svg class="mobile__logo" width="35" height="37" viewBox="0 0 35 37">
@@ -37,33 +39,15 @@ ${Sprites()} <!--Logos-->
                         <li class="menu__list-item">
                             <a href="#">Help</a>
                         </li>
-                        <li class="mobile-nav">
-                            <ul class="mobile__action-user">
-                                <li class="mobile__action--item-signIn">
-                                    <button>
-                                        <a href="#" class="user__action-link">Sign In</a>
-                                    </button>
-                                </li>
-                                <li class="mobile__action--item-signUp">
-                                    <button>
-                                        <a href="#" class="user__action-link">Sign Up</a>
-                                    </button>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
-                    <ul class="user__actions">
-                        <li class="user__action--item-signIn">
-                            <button>
-                                <a href="#" class="user__action-link">Sign In</a>
-                            </button>
-                        </li>
-                        <li class="user__action--item-signUp">
-                            <button>
-                                <a href="#" class="user__action-link">Sign Up</a>
-                            </button>
-                        </li>
-                    </ul> 
+                    <div class="user__actions">
+                        <button class="user__action--btn-signIn">
+                           Sign In
+                        </button>
+                        <button class="user__action--btn-signUp">
+                          Sign Up
+                        </button>
+                    </div> 
                 </nav>
             </div>
         </div>
@@ -71,23 +55,20 @@ ${Sprites()} <!--Logos-->
     <section class="intro">
         <div class="container">
             <div class="intro__inner">
-                <ul class="intro__info">
-                    <li class="intro__item-mainText">
-                        <h1>Want anything to be easy with <span>LaslesVPN</span></h1>
-                    </li>
-                    <li class="intro__item-text">
-                        <p>Provide a network for all your needs with ease and fun using <span>LaslesVPN</span> discover interesting features from us.</p>
-                    </li>
-                    <li class="intro__item-btn">
-                        <button>
-                            <a href="">Get Started</a>
-                        </button>
-                    </li>
-                </ul>
-                <!--<svg class="introPicture" width="610" height="450" viewBox="0 0 615 450">
-                    <use xlink:href="#Intro"></use>
-                </svg>-->
-                <img src="../../public/img/Intro.svg" alt="">
+                <div class="intro__info">
+                    <h1 class="intro__item-mainText">
+                        Want anything to be easy with <b>LaslesVPN</b>
+                    </h1>
+                    <p class="intro__item-text">
+                        Provide a network for all your needs with ease and fun using <b>LaslesVPN</b> discover interesting features from us.
+                    </p>
+                    <button class="intro__item-btn">
+                        Get Started
+                    </button>
+                </div>  
+                <div class="intro__inner-img">
+                    <img src="../../public/img/Intro.svg" alt="intro picture" width="611" height="382">
+                </div>
             </div>
         </div>
     </section>
@@ -97,30 +78,28 @@ ${Sprites()} <!--Logos-->
                 <ul class="boxInfo__list">
                     <li class="boxInfo__list-item">
                         <div class="circle">
-                            <img src="../../public/icons/userIcon.svg" alt="">
+                            <img src="../../public/icons/userIcon.svg" alt="user icon" width="17" height="19">
                         </div>
                         <div class="info">
-                            <span class="amount">90+</span>
+                            <b class="amount">90+</b>
                             <span class="amountText">Users</span>
                         </div>
                     </li>
-                    <span class="splitter"></span>
                     <li class="boxInfo__list-item">
                         <div class="circle">
-                            <img src="../../public/icons/pointIcon.svg" alt="">
+                            <img src="../../public/icons/pointIcon.svg" alt="point icon" width="14" height="21">
                         </div>
                         <div class="info">
-                            <span class="amount">30+</span>
+                            <b class="amount">30+</b>
                             <span class="amountText">Locations</span>
                         </div>
                     </li>
-                    <span class="splitter"></span>
                     <li class="boxInfo__list-item">
                         <div class="circle">
-                            <img src="../../public/icons/serverIcon.svg" alt="">
+                            <img src="../../public/icons/serverIcon.svg" alt="server icon" width="21" height="19">
                         </div>
                         <div class="info">
-                            <span class="amount">50+</span>
+                            <b class="amount">50+</b>
                             <span class="amountText">Servers</span>
                         </div>
                     </li>
@@ -132,14 +111,10 @@ ${Sprites()} <!--Logos-->
         <div class="container">
             <div class="about__inner">
                 <img src="../../public/img/aboutUs.svg" alt="">
-                <ul class="about__info">
-                   <li class="about__item-mainText">
-                        <h2>We Provide Many Features You Can Use</h2>
-                    </li>
-                    <li class="about__item-text">
-                        <p>You can explore the features that we provide with fun and have their own functions each feature.</p>
-                    </li>
-                    <li class="advantages">
+                <div class="about__info">
+                    <h2 class="about__item-mainText">We Provide Many Features You Can Use</h2>
+                    <p class="about__item-text">You can explore the features that we provide with fun and have their own functions each feature.</p>
+                    <div class="advantages">
                         <ul class="advantages__list">
                             <li class="advantages__list-item">
                                 <svg class="tickIcon" width="20" height="20" viewBox="0 0 20 20">
@@ -166,21 +141,23 @@ ${Sprites()} <!--Logos-->
                                 <p>No specific time limits.</p>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </div>
 `
 
-const menuList = document.querySelector('.menu__list');
+const menuList = document.querySelector('.menu');
 const menuBtn = document.querySelector('.menu__btn');
-const mobileLogoOpen = document.querySelector('.mobile__logo')
+const mobileLogoOpen = document.querySelector('.mobile__logo');
+const userAction = document.querySelector('.user__actions');
 
 menuBtn.addEventListener('click', () => {
-    menuList.classList.toggle('menu__list--open');
+    menuList.classList.toggle('menu__list-open');
     menuBtn.classList.toggle('change');
     mobileLogoOpen.classList.toggle('mobile__logo-open');
-    document.body.classList.toggle('no-scroll')
+    userAction.classList.toggle('user__action-open');
+    document.body.classList.toggle('no-scroll');
 });

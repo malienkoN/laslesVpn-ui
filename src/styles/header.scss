@@ -14,24 +14,19 @@
   align-items: center;
 }
 
-.mobile-nav {
-  display: none;
+.menu__list {
+  margin-right: 70px;
 }
 
 .mobile__logo {
   display: none;
 }
 
-.menu__list {
-  margin-right: 110px;
-}
-
 .menu__list--close-btn {
   display: none;
 }
 
-.menu__list-item a,
-.user__action--item-signIn button a{
+.menu__list-item a {
   position: relative;
   display: inline-block;
   color: #4F5665;
@@ -40,22 +35,14 @@
   transition: color .2s ease-in-out;
 }
 
-.user__action--item-signIn button a{
+.user__action--btn-signIn {
   position: relative;
-  display: inline-block;
-  color: #4F5665;
   margin-right: 0;
-  font-size: 16px;
-  transition: color .2s ease-in-out;
-}
-
-.mobile__action--item-signIn button a {
-  position: relative;
+  transition: all .2s ease-in-out;
 }
 
 .menu__list-item a::after,
-.user__action--item-signIn button a::after,
-.mobile__action--item-signIn button a::after{
+.user__action--btn-signIn::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -65,33 +52,18 @@
   height: 100%;
   background-color: #F53855;
   transition: width 0.3s ease-in-out;
-  z-index: -1; /* Ensure the background is behind the text */
+  z-index: -1;
   border-radius: 20px;
 }
 
 .menu__list-item a:hover,
-.user__action--item-signIn button a:hover,
-.mobile__action--item-signIn button a:hover{
+.user__action--btn-signIn:hover {
   color: #fff;
 }
 
 .menu__list-item a:hover::after {
   width: 100%;
-  padding: 5px;
-}
-
-.user__action--item-signIn button a:hover::after{
-  width: 100%;
-  padding: 13px;
-}
-
-.mobile__action--item-signIn button a:hover::after {
-  width: 100%;
-  padding: 13px 45px;
-}
-
-.mobile__action--item-signIn button:hover {
-  border: none;
+  padding: 10px;
 }
 
 .menu__btn {
@@ -102,6 +74,7 @@
 }
 
 .bar1, .bar2, .bar3 {
+  display: block;
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -109,42 +82,39 @@
   transition: 0.4s;
 }
 
-.user__action--item-signIn button {
+.user__action--btn-signIn {
   border: none;
-  padding-right: 30px;
-}
-
-.user__action--item-signIn button a {
+  margin-right: 30px;
   color: #0B132A;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.user__action--item-signUp button {
+.user__action--btn-signIn:hover::after{
+  width: 100%;
+  padding: 13px;
+  color: #fff;
+}
+
+.user__action--btn-signUp {
   border: 1px solid #F53855;
   border-radius: 20px;
   padding: 13px 45px;
   font-weight: 500;
   transition: all 0.2s ease;
   cursor: pointer;
-}
-
-.user__action--item-signUp button a {
   font-size: 16px;
   color: #F53855;
-  font-weight: 500;
 }
 
-.user__action--item-signUp button:hover {
-  background-color: #0B132A;
+.user__action--btn-signUp:hover {
+  background-color: #f53855;
+  color: #fff;
 }
 
-.mobile__action--item-signUp button {
-  transition: all 0.2s ease;
-}
+.user__actions.user__action-open {
 
-.mobile__action--item-signUp button:hover {
-  background-color: #0B132A;
 }
 
 // MEDIA RESPONSES
@@ -156,16 +126,26 @@
     margin-right: 30px;
   }
 }
+
 @media (max-width: 1000px) {
   .container {
     padding: 0 40px;
   }
   .menu__btn {
     display: inline-block;
-    z-index: 1;
+    z-index: 2;
   }
   .user__actions {
-    display: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .user__action--btn-signIn {
+    font-size: 25px;
+    margin-right: 0;
+  }
+  .user__action--btn-signUp {
+    font-size: 25px;
   }
   .mobile__logo {
     width: 105px;
@@ -176,37 +156,7 @@
     z-index: 1;
     margin-bottom: 80px;
   }
-  .mobile-nav {
-    display: flex;
-    height: 100%;
-  }
-  .mobile__action-user {
-    display: flex;
-    width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .mobile__action--item-signIn button {
-    border: 1px solid #0B132A;
-    padding: 13px 45px;
-    border-radius: 20px;
-  }
-  .mobile__action--item-signIn button a {
-    color: #0B132A;
-    font-size: 30px;
-    font-weight: 500;
-  }
-  .mobile__action--item-signUp button {
-    border: 1px solid #F53855;
-    border-radius: 20px;
-    padding: 13px 45px;
-  }
-  .mobile__action--item-signUp button a {
-    font-size: 30px;
-    color: #F53855;
-    font-weight: 500;
-  }
-  .menu__list {
+  .menu {
     transform: translateX(100%);
     position: fixed;
     inset: 0;
@@ -214,13 +164,19 @@
     box-shadow: inset 100px 50px 100px 10px rgba(113, 113, 113, 0.1);
     display: flex;
     flex-direction: column;
-    text-align: center;
     transition: transform .3s ease;
-    overflow-y: scroll;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
   }
-  .menu__list.menu__list--open {
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-right: 0;
+  }
+  .menu.menu__list-open {
     transform: translateX(0%);
   }
   .menu__list-item {
@@ -247,6 +203,9 @@
 @media (max-width: 915px) {
   .mobile__logo.mobile__logo-open  {
     margin-bottom: 100px;
+  }
+  .user__actions.user__action-open {
+    top: 750px;
   }
   .logo {
     width: 219px;
@@ -276,20 +235,9 @@
   .menu__list-item a {
     font-size: 30px;
   }
-  .mobile__action--item-signIn button a {
-    font-size: 30px;
-  }
-  .mobile__action--item-signUp button a {
-    font-size: 30px;
-  }
 }
 
 @media (max-width: 600px) {
-  .mobile__action-user {
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 0;
-  }
   .mobile__logo {
     width: 105px;
     height: 107px;
@@ -300,16 +248,11 @@
   .menu__list-item a {
     font-size: 25px;
   }
-  .mobile__action--item-signIn button {
-    margin-bottom: 30px;
+  .user__action--btn-signIn {
+    font-size: 20px;
   }
-  .mobile__action--item-signIn button a {
-    color: #0B132A;
-    font-size: 25px;
-  }
-  .mobile__action--item-signUp button a {
-    font-size: 25px;
-    color: #F53855;
+  .user__action--btn-signUp {
+    font-size: 20px;
   }
 }
 
@@ -318,20 +261,22 @@
     width: 85px;
     height: 87px;
   }
+  .user__actions.user__action-open {
+    top: 600px;
+    flex-direction: column;
+    gap: 50px;
+  }
   .mobile__logo.mobile__logo-open  {
     margin-bottom: 70px;
-  }
-  .mobile__action--item-signIn button a {
-    font-size: 20px;
-  }
-  .mobile__action--item-signUp button a {
-    font-size: 20px;
   }
   .menu__list-item {
     margin-bottom: 30px;
   }
   .menu__list-item a {
     font-size: 20px;
+  }
+  .menu__list {
+    margin-bottom: 60px;
   }
 }
 
@@ -367,10 +312,8 @@
   .menu__list-item a {
     font-size: 20px;
   }
-  .mobile__action--item-signIn button a {
-    font-size: 20px;
-  }
-  .mobile__action--item-signUp button a {
-    font-size: 20px;
+  .user__actions.user__action-open {
+    top: 500px;
+    gap: 30px;
   }
 }
