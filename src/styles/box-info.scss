@@ -1,0 +1,140 @@
+.boxInfo {
+  margin-bottom: 95px;
+}
+
+.boxInfo__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+.boxInfo__list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.boxInfo__list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 33.33333%;
+  justify-content: center;
+}
+
+.boxInfo__list-item:first-child::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  width: 2px;
+  height: 130px;
+  background-color: #EEEFF2;
+  transform: translateY(-50%);
+}
+
+.boxInfo__list-item:last-child::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+  width: 2px;
+  height: 130px;
+  background-color: #EEEFF2;
+  transform: translateY(-50%);
+}
+
+.boxInfo__list-item .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background-color: #FFECEC;
+  border-radius: 50%;
+  margin-right: 36.5px;
+}
+
+.boxInfo__list-item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.amount {
+  font-size: 25px;
+  color: #0B132A;
+}
+.amountText {
+  font-weight: 400;
+  font-size: 20px;
+  color: #4F5665;
+}
+
+@media (max-width: 890px) {
+  .boxInfo__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .boxInfo__list-item:first-child::after {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: none;
+  }
+
+  .boxInfo__list-item:last-child::before {
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: none;
+    left: 0;
+  }
+  .boxInfo__inner {
+    height: auto;
+    padding: 30px 0;
+  }
+  .boxInfo__list-item {
+    padding: 50px 0;
+    min-width: 170px;
+    width: auto;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 769px) {
+  .amount {
+    font-size: 22px;
+  }
+  .amountText {
+    font-size: 17px;
+  }
+  .boxInfo__list-item .circle {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .boxInfo__list-item .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .amount {
+    font-size: 20px;
+  }
+  .amountText {
+    font-size: 15px;
+  }
+}

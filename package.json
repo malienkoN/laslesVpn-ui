@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.1.0"
+    "vite-plugin-svg-icons": "^2.0.1"
+  },
+  "dependencies": {
+    "vite-plugin-svg-sprite": "^0.5.1"
   }
 }
