@@ -1,3 +1,5 @@
+@import "vars-colors";
+
 .aboutUs {
   margin-bottom: 126px;
 }
@@ -20,12 +22,12 @@
   font-size: 35px;
   font-weight: 500;
   line-height: 1.5;
-  color: #0B132A;
+  color: $side-color;
   margin-bottom: 20px;
 }
 
 .about__item-text {
-  color: #4F5665;
+  color: $main-color;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
@@ -42,7 +44,7 @@
 .advantages__list-item p {
   font-size: 14px;
   font-weight: 400;
-  color: #4F5665;
+  color: $main-color;
 }
 
 @media (max-width: 1000px) {

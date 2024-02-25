@@ -1,3 +1,5 @@
+@import "vars-colors";
+
 .intro {
   margin-bottom: 102px;
 }
@@ -37,7 +39,7 @@
 
 .intro__item-btn {
   border: none;
-  background-color: #F53838;
+  background-color: $second-color-v2;
   padding: 17.5px 77.5px;
   border-radius: 10px;
   box-shadow: 0 8px 15px rgba(245, 56, 56, 0.35);
