@@ -117,6 +117,10 @@ ${Sprites()}<!--Logos-->
 	</section>
 	<section class="plan">
 		<div class="container">
+            <div class="plan__info">
+                <h2 class="plan__inner-mainText">Choose Your Plan</h2>
+                <p class="plan__inner-text">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+			</div>
 			<div class="swiper swiperPlan">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -247,6 +251,26 @@ ${Sprites()}<!--Logos-->
 			</div><!--swiper-->
 		</div><!--container-->
 	</section>
+	<section class="globalNetwork">
+	    <div class="container">
+	        <div class="globalNetwork__inner">
+	            <div class="network__info">
+                    <h2 class="network__item-mainText">Huge Global Network of Fast VPN</h2>
+                    <p class="network__item-text">See <b style="font-weight: 500">LaslesVPN</b> everywhere to make it easier for you when you move locations.</p>
+				</div>
+				<div class="map__container">
+				    <img class="map__network" src="/img/HugeGlobal.svg" alt="" width="1060" height="537">
+				</div>
+				<ul class="sponsored__list">
+                    <li class="sponsored__list-item"><img src="/img/sponsored-netflix.png" alt="" width="175" height="65"></li>
+                    <li class="sponsored__list-item"><img src="/img/sponsored-reddit.svg" alt="" width="175" height="65"></li>
+                    <li class="sponsored__list-item"><img src="/img/sponsored-amazon.png" alt="" width="175" height="65"></li>
+                    <li class="sponsored__list-item"><img src="/img/sponsored-discord.svg" alt="" width="175" height="65"></li>
+                    <li class="sponsored__list-item"><img src="/img/sponsored-spotify.svg" alt="" width="175" height="65"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </div> 
 `
 const menuList = document.querySelector('.menu');

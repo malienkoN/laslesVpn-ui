@@ -1,7 +1,7 @@
 @import "vars-colors";
 
 .plan {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .swiperPlan .swiper-pagination-bullet {
@@ -15,10 +15,15 @@
   color: $second-color-v2;
 }
 
+.plan__info {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
 
 .plan__inner-mainText {
   font-size: 35px;
   font-weight: 500;
+  color: $side-color;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -29,7 +34,6 @@
   font-weight: 400;
   line-height: 1.8;
   color: $main-color;
-  margin: 0 auto 60px auto;
   text-align: center;
 }
 
@@ -125,6 +129,12 @@
     width: 100%;
     max-width: 191px;
     margin: 0 auto 25px auto;
+  }
+}
+
+@media (max-width: 769px) {
+  .plan__inner-text {
+    width: 100%;
   }
 }
 
