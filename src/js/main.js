@@ -271,6 +271,137 @@ ${Sprites()}<!--Logos-->
             </div>
         </div>
     </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__info">
+                <h2 class="reviews__info-title">Trusted by Thousands of Happy Customer</h2>
+                <p class="reviews__info-text">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+            </div>
+            <div class="swiper swiperReviews">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review__item">
+                            <div class="customer__info">
+                                <img src="/img/avatar1.png" alt="" class="avatar" width="50" height="51">
+                                    <div class="avatar__info">
+                                        <span class="nickname">Viezh Robert</span>
+                                        <span class="country">Warsaw, Poland</span>
+                                    </div>
+                                <span class="grade">
+                                    4.5
+                                </span>
+                            </div>
+                            <span class="customer__comment">
+                                “Wow... I am very happy to use this VPN, it turned out to be more than
+                                 my expectations and so far there have been no problems. LaslesVPN 
+                                 always the best”.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review__item">
+                            <div class="customer__info">
+                                <img src="/img/avatar2.png" alt="" class="avatar" width="50" height="51">
+                                    <div class="avatar__info">
+                                        <span class="nickname">Yessica Christy</span>
+                                        <span class="country">Shanxi, China</span>
+                                    </div>
+                                <span class="grade">
+                                    4.5
+                                </span>
+                            </div>
+                            <span class="customer__comment">
+                                “I like it because I like to travel far and still can connect with high speed.”.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review__item">
+                            <div class="customer__info">
+                                <img src="/img/avatar3.png" alt="" class="avatar" width="50" height="51">
+                                    <div class="avatar__info">
+                                        <span class="nickname">Kim Young Jou</span>
+                                        <span class="country">Seoul, South Korea</span>
+                                    </div>
+                                <span class="grade">
+                                    4.5
+                                </span>
+                            </div>
+                            <span class="customer__comment">
+                                “This is very unusual for my business that currently requires a virtual private network that has high security.”.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review__item">
+                            <div class="customer__info">
+                                <img src="/img/avatar1.png" alt="" class="avatar" width="50" height="51">
+                                    <div class="avatar__info">
+                                        <span class="nickname">Hetalo Valentin</span>
+                                        <span class="country">Ukraine, Dnipro</span>
+                                    </div>
+                                <span class="grade">
+                                    3.6
+                                </span>
+                            </div>
+                            <span class="customer__comment">
+                                “I dont know, VPN is normal”.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review__item">
+                            <div class="customer__info">
+                                <img src="/img/avatar1.png" alt="" class="avatar" width="50" height="51">
+                                    <div class="avatar__info">
+                                        <span class="nickname">Malienko Nikita</span>
+                                        <span class="country">Ukraine, Dnipro</span>
+                                    </div>
+                                <span class="grade">
+                                    5
+                                </span>
+                            </div>
+                            <span class="customer__comment">
+                                “That's so good stuff, I choose a premium plan and feel this freedom)”.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                       <div class="review__item">
+                            <div class="customer__info">
+                                <img src="/img/avatar1.png" alt="" class="avatar" width="50" height="51">
+                                    <div class="avatar__info">
+                                        <span class="nickname">Viezh Robert</span>
+                                        <span class="country">Warsaw, Poland</span>
+                                    </div>
+                                <span class="grade">
+                                    4.5
+                                </span>
+                            </div>
+                            <span class="customer__comment">
+                                “Wow... I am very happy to use this VPN, it turned out to be more than
+                                 my expectations and so far there have been no problems. LaslesVPN 
+                                 always the best”.
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="swiper-pagination-reviews"></div>
+                    <div class="swiper-btn-prev-reviews">
+                        <svg class="arrowLeft" width="30" height="30" viewBox="0 0 30 30">
+                            <use xlink:href="#arrowLeft"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-btn-next-reviews">
+                        <svg class="arrowRight" width="30" height="30" viewBox="0 0 30 30">
+                            <use xlink:href="#arrowRight"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div> 
 `
 const menuList = document.querySelector('.menu');
