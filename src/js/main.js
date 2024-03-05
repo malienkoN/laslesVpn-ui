@@ -161,3 +161,5 @@ menuBtn.addEventListener('click', () => {
     userAction.classList.toggle('user__action-open');
     document.body.classList.toggle('no-scroll');
 });
+
+console.log("test")
