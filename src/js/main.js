@@ -2,11 +2,12 @@ import '../../src/styles/main.scss'
 import Sprites from "./sprites.js";
 document.querySelector('#app').innerHTML = ` 
 ${Sprites()}<!--Logos-->
+
 <div>
 	<header>
 		<div class="container">
 			<div class="header__inner"> 
-			    <a href="/">
+			    <a href="/" class="header__logo">
                     <svg class="logo" width="149" height="37" viewBox="0 0 149 37">
                         <use xlink:href="#LaslesVPN"></use>
                     </svg>
@@ -402,6 +403,65 @@ ${Sprites()}<!--Logos-->
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="subscribe__block">
+            <div class="subscribe__info">
+                <h2 class="subscribe__info-title">Subscribe Now for Get Special Features!</h2>
+                <p class="subscribe__info-text">Let's subscribe with us and find the fun.</p>
+            </div>
+            <button class="subscribe__btn">
+                Subcribe Now
+            </button>
+        </div>        
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__aboutUs">
+                    <a href="/" class="footer__logo">
+                        <svg class="logo" width="149" height="37" viewBox="0 0 149 37">
+                            <use xlink:href="#LaslesVPN"></use>
+                        </svg>
+                    </a> 
+                    <p class="aboutUs">
+                        <b>LaslesVPN</b> is a private virtual network that has unique features
+                         and has high security.
+                    </p>
+                    <div class="socials">
+                        <img src="/img/icons/socialInstagram.png" alt="" width="33" height="33">
+                        <img src="/img/icons/socialFacebook.png" alt="" width="33" height="33">
+                        <img src="/img/icons/socialTwitter.png" alt="" width="33" height="33">
+                    </div>
+                    <span class="copyright">&copy;2020Lasles<b>VPN</b></span>
+                </div>
+                <div class="footer__list">
+                    <ul class="footer__list-product">
+                        <li class="list__title">Product</li>
+                        <li class="list__item"><a href="#">Download</a></li>
+                        <li class="list__item"><a href="#">Pricing</a></li>
+                        <li class="list__item"><a href="#">Locations</a></li>
+                        <li class="list__item"><a href="#">Server</a></li>
+                        <li class="list__item"><a href="#">Contries</a></li>
+                        <li class="list__item"><a href="#">Blog</a></li>
+                    </ul>
+                    <ul class="footer__list-engage">
+                        <li class="list__title">Engage</li>
+                        <li class="list__item"><a href="#">LaslesVPN ?</a></li>
+                        <li class="list__item"><a href="#">FAQ</a></li>
+                        <li class="list__item"><a href="#">Tutorials</a></li>
+                        <li class="list__item"><a href="#">About Us</a></li>
+                        <li class="list__item"><a href="#">Privacy Policy</a></li>
+                        <li class="list__item"><a href="#">Terms of Service</a></li>
+                    </ul>
+                    <ul class="footer__list-earnMoney">
+                        <li class="list__title">Earn Money</li>
+                        <li class="list__item"><a href="#">Affiliate</a></li>
+                        <li class="list__item"><a href="#">Become Partner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div> 
 `
 const menuList = document.querySelector('.menu');

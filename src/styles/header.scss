@@ -206,7 +206,7 @@
   .mobile__logo.mobile__logo-open  {
     margin-bottom: 100px;
   }
-  .logo {
+  .header__logo .logo {
     width: 219px;
     height: 117px;
   }
@@ -280,7 +280,7 @@
 }
 
 @media (max-width: 420px) {
-  .logo {
+  .header__logo .logo {
     width: 149px;
     height: 37px;
   }
