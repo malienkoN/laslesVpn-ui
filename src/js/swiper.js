@@ -47,13 +47,13 @@ const swiperReviews = new Swiper('.swiperReviews', {
     slidesPerView: 'auto',
     breakpoints: {
         500: {
-            slidesPerView: '1',
+            slidesPerView: '1'
         },
         700: {
-            slidesPerView: '1.5',
+          slidesPerView: '1.5'
         },
-        1100: {
-            slidesPerView: '2.3',
+        1000: {
+            slidesPerView: '2'
         },
         1300: {
             slidesPerView: '2.5'

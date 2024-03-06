@@ -7,8 +7,10 @@
   padding: 0 6em;
   background-color: #FFF;
   height: 233px;
+  width: 68%;
   transform: translateY(50%);
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .subscribe__info {
@@ -79,6 +81,7 @@
   .subscribe__block {
     padding: 0 1em;
     flex-direction: column;
+    width: 85%;
   }
   .subscribe__info {
     justify-content: center;
