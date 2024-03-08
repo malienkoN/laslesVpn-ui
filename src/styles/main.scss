@@ -4,6 +4,11 @@
 @import "intro";
 @import "box-info";
 @import "about-us";
+@import "swiper-plan";
+@import "global-network";
+@import "swiper-reviews";
+@import "subscribe";
+@import "footer";
 
 .no-scroll {
   overflow: hidden;
@@ -11,10 +16,6 @@
 
 html {
   box-sizing: border-box;
-}
-
-html,
-body {
 }
 
 body {
@@ -37,3 +38,13 @@ img {
   padding-right: 20px;
 }
 
+.gradient {
+  background: linear-gradient(to bottom, #FAFAFA, #FFFFFF); /* Your gradient colors */
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

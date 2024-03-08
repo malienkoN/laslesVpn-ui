@@ -41,6 +41,7 @@ ul {
 button {
     background: transparent;
     font-family: "Rubik",serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -50,6 +51,7 @@ a {
     vertical-align:baseline;
     background:transparent;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* change colours to suit your needs */
