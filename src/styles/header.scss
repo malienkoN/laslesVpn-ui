@@ -238,6 +238,9 @@
 }
 
 @media (max-width: 768px) {
+  .header__inner {
+    margin-top: 25px;
+  }
   .mobile__logo {
     width: 105px;
     height: 107px;

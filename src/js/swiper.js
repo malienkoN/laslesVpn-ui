@@ -7,16 +7,14 @@ import 'swiper/css/pagination';
 
 // init Swiper:
 Swiper.use([Navigation, Pagination]);
-const swiperPlan = new Swiper('.swiperPlan', {
+new Swiper('.swiperPlan', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoplay: {
-        delay: 5000,
-    },
     slidesPerView: 'auto',
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
@@ -29,39 +27,31 @@ const swiperPlan = new Swiper('.swiperPlan', {
             slidesPerView: 3,
             spaceBetween: 30
         },
-        1100: {
-            slidesPerView: 3,
-            spaceBetween: 50
-        }
     },
-    modules: [Navigation, Pagination]
 });
 
-const swiperReviews = new Swiper('.swiperReviews', {
+new Swiper('.swiperReviews', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    autoplay: {
-        delay: 5000,
-    },
     slidesPerView: 'auto',
     breakpoints: {
-        500: {
-            slidesPerView: '1'
-        },
-        700: {
-          slidesPerView: '1.5'
-        },
-        1000: {
-            slidesPerView: '2'
-        },
         1300: {
-            slidesPerView: '2.5'
-        }
+            slidesPerView: 2.5,
+        },
+        1024: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 1.5,
+        },
+        576: {
+            slidesPerView: 1,
+        },
     },
-    spaceBetween: 10,
     pagination: {
         el: '.swiper-pagination-reviews',
+        clickable: true,
     },
     navigation: {
         nextEl: '.swiper-btn-next-reviews',
@@ -69,5 +59,4 @@ const swiperReviews = new Swiper('.swiperReviews', {
     },
     simulateTouch: true,
     grabCursor: true,
-    modules: [Navigation, Pagination]
 });
