@@ -250,8 +250,8 @@ ${Sprites()}<!--Logos-->
                         </div><!--swiper-slide-->
                     </div><!--swiper-wrapper-->
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <button class="swiper-button-prev"></button>
+                    <button class="swiper-button-next"></button>
                 </div><!--swiper-->
             </div><!--container-->
         </section>
@@ -392,16 +392,16 @@ ${Sprites()}<!--Logos-->
                     </div>
                     <div class="control">
                         <div class="swiper-pagination-reviews"></div>
-                        <div class="swiper-btn-prev-reviews">
+                        <button class="swiper-btn-prev-reviews">
                             <svg class="arrowLeft" width="30" height="30" viewBox="0 0 30 30">
                                 <use xlink:href="#arrowLeft"></use>
                             </svg>
-                        </div>
-                        <div class="swiper-btn-next-reviews">
+                        </button>
+                        <button class="swiper-btn-next-reviews">
                             <svg class="arrowRight" width="30" height="30" viewBox="0 0 30 30">
                                 <use xlink:href="#arrowRight"></use>
                             </svg>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>

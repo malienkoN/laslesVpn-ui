@@ -79,38 +79,37 @@ footer {
 
 @media (max-width: 768px) {
   .footer__inner {
+    position: relative;
     flex-direction: column;
+  }
+  .copyright {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0
   }
   .footer__list {
     margin-left: 0;
     justify-content: center;
+    margin-bottom: 50px;
   }
   .footer__aboutUs {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 440px) {
   .footer__list {
-    gap: 30px;
+    gap: 20px;
+  }
+  .footer__list ul {
+    min-width: 25vw;
   }
   footer {
     padding-top: 180px;
   }
 }
 
-@media (max-width: 375px) {
-  .footer__list {
-    gap: 5px;
-  }
-  .footer__list > ul {
-    width: 90%;
-  }
-}
 
-@media (max-width: 320px) {
-  .footer__list > ul:last-child {
-    width: 50%;
-  }
-}
