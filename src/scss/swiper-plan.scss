@@ -47,7 +47,7 @@
   border-radius: 10px;
   padding: 30px 55px 0 55px;
   text-align: center;
-  height: 660px;
+  min-height: 670px;
   transition: border .3s ease;
 }
 
@@ -169,7 +169,7 @@
     font-size: 14px;
   }
   .plan__choose-item {
-    height: 490px;
+    min-height: 550px;
     padding: 30px 20px 30px 20px;
   }
   .plan__choose-item img {

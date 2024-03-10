@@ -1,12 +1,5 @@
 @import "vars-colors";
 
-.control {
-  margin-top: 112px;
-  display: flex;
-  width: 100%;
-  gap: 20px;
-}
-
 .swiper-btn-next-reviews {
   background: $second-color-v2;
 }
@@ -56,6 +49,13 @@
   margin: 0 5px !important;
 }
 
+.control {
+  margin-top: 112px;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
 .reviews__info {
   display: flex;
   align-items: center;
@@ -90,6 +90,7 @@
   border: 2px solid #DDD;
   border-radius: 10px;
   transition: border .3s ease;
+  overflow-y: auto;
 }
 
 .review__item:hover {
@@ -189,7 +190,7 @@
   }
   .review__item {
     width: 80vw;
-    height: 200px;
+    min-height: 200px;
     padding: 10px;
   }
   .swiper-btn-next-reviews,

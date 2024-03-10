@@ -1,4 +1,4 @@
-import '../../src/styles/main.scss'
+import '../../src/scss/main.scss'
 import Sprites from "./sprites.js";
 document.querySelector('#app').innerHTML = ` 
 ${Sprites()}<!--Logos-->
@@ -477,3 +477,4 @@ menuBtn.addEventListener('click', () => {
     userAction.classList.toggle('user__action-open');
     document.body.classList.toggle('no-scroll');
 });
+
